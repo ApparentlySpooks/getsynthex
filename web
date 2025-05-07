@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { Download, Code, Shield, Zap } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -23,9 +21,9 @@ export default function Home() {
             FAQ
           </Link>
         </nav>
-        <Button variant="outline" className="hidden md:flex border-blue-500 text-blue-400 hover:bg-blue-500/10">
+        <button className="hidden md:flex border-blue-500 text-blue-400 hover:bg-blue-500/10 px-8 py-6 rounded-lg">
           Login
-        </Button>
+        </button>
       </header>
 
       {/* Hero Section */}
@@ -35,13 +33,12 @@ export default function Home() {
         </h1>
         <h2 className="text-xl md:text-2xl text-gray-400 mb-8">The most advanced Roblox Executor.</h2>
         <div className="flex flex-col sm:flex-row gap-4 mt-8">
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 rounded-lg flex items-center gap-2">
-            <Download className="w-5 h-5" />
+          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 rounded-lg flex items-center gap-2">
             Download Now
-          </Button>
-          <Button variant="outline" className="border-blue-500 text-blue-400 hover:bg-blue-500/10 px-8 py-6 rounded-lg">
+          </button>
+          <button className="border-blue-500 text-blue-400 hover:bg-blue-500/10 px-8 py-6 rounded-lg">
             Learn More
-          </Button>
+          </button>
         </div>
       </section>
 
@@ -52,21 +49,21 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-[#0c1e36] p-6 rounded-xl border border-blue-500/20">
               <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
-                <Code className="w-6 h-6 text-blue-400" />
+                <span className="text-blue-400">Code Icon</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Script Execution</h3>
               <p className="text-gray-400">Execute any Lua script with our powerful and stable execution engine.</p>
             </div>
             <div className="bg-[#0c1e36] p-6 rounded-xl border border-blue-500/20">
               <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
-                <Shield className="w-6 h-6 text-blue-400" />
+                <span className="text-blue-400">Shield Icon</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Undetectable</h3>
               <p className="text-gray-400">Advanced bypass techniques ensure you'll never get detected or banned.</p>
             </div>
             <div className="bg-[#0c1e36] p-6 rounded-xl border border-blue-500/20">
               <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
-                <Zap className="w-6 h-6 text-blue-400" />
+                <span className="text-blue-400">Zap Icon</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Lightning Fast</h3>
               <p className="text-gray-400">Optimized for performance with minimal impact on your game's FPS.</p>
@@ -83,16 +80,12 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to elevate your Roblox experience?</h2>
               <p className="text-gray-400 mb-6">Download Synthex now and unlock the full potential of your games.</p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 rounded-lg flex items-center gap-2">
-                  <Download className="w-5 h-5" />
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 rounded-lg flex items-center gap-2">
                   Download v2.4.1
-                </Button>
-                <Button
-                  variant="outline"
-                  className="border-blue-500 text-blue-400 hover:bg-blue-500/10 px-8 py-6 rounded-lg"
-                >
+                </button>
+                <button className="border-blue-500 text-blue-400 hover:bg-blue-500/10 px-8 py-6 rounded-lg">
                   View Changelog
-                </Button>
+                </button>
               </div>
             </div>
           </div>
