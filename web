@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#0a1929] text-white">
@@ -11,19 +9,16 @@ export default function Home() {
           </span>
         </div>
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="#features" className="text-gray-300 hover:text-white transition-colors">
+          <a href="#features" className="text-gray-300 hover:text-white transition-colors">
             Features
-          </Link>
-          <Link href="#download" className="text-gray-300 hover:text-white transition-colors">
+          </a>
+          <a href="#download" className="text-gray-300 hover:text-white transition-colors">
             Download
-          </Link>
-          <Link href="#faq" className="text-gray-300 hover:text-white transition-colors">
+          </a>
+          <a href="#faq" className="text-gray-300 hover:text-white transition-colors">
             FAQ
-          </Link>
+          </a>
         </nav>
-        <button className="hidden md:flex border-blue-500 text-blue-400 hover:bg-blue-500/10 px-8 py-6 rounded-lg">
-          Login
-        </button>
       </header>
 
       {/* Hero Section */}
@@ -48,23 +43,14 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Powerful Features</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-[#0c1e36] p-6 rounded-xl border border-blue-500/20">
-              <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-blue-400">Code Icon</span>
-              </div>
               <h3 className="text-xl font-semibold mb-2">Script Execution</h3>
               <p className="text-gray-400">Execute any Lua script with our powerful and stable execution engine.</p>
             </div>
             <div className="bg-[#0c1e36] p-6 rounded-xl border border-blue-500/20">
-              <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-blue-400">Shield Icon</span>
-              </div>
               <h3 className="text-xl font-semibold mb-2">Undetectable</h3>
               <p className="text-gray-400">Advanced bypass techniques ensure you'll never get detected or banned.</p>
             </div>
             <div className="bg-[#0c1e36] p-6 rounded-xl border border-blue-500/20">
-              <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-blue-400">Zap Icon</span>
-              </div>
               <h3 className="text-xl font-semibold mb-2">Lightning Fast</h3>
               <p className="text-gray-400">Optimized for performance with minimal impact on your game's FPS.</p>
             </div>
@@ -107,19 +93,19 @@ export default function Home() {
                 <h3 className="text-sm font-semibold mb-3 text-gray-300">Product</h3>
                 <ul className="space-y-2">
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white text-sm">
+                    <a href="#" className="text-gray-400 hover:text-white text-sm">
                       Features
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white text-sm">
+                    <a href="#" className="text-gray-400 hover:text-white text-sm">
                       Download
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white text-sm">
+                    <a href="#" className="text-gray-400 hover:text-white text-sm">
                       Changelog
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -127,19 +113,19 @@ export default function Home() {
                 <h3 className="text-sm font-semibold mb-3 text-gray-300">Support</h3>
                 <ul className="space-y-2">
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white text-sm">
+                    <a href="#" className="text-gray-400 hover:text-white text-sm">
                       FAQ
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white text-sm">
+                    <a href="#" className="text-gray-400 hover:text-white text-sm">
                       Discord
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white text-sm">
+                    <a href="#" className="text-gray-400 hover:text-white text-sm">
                       Contact
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -147,14 +133,14 @@ export default function Home() {
                 <h3 className="text-sm font-semibold mb-3 text-gray-300">Legal</h3>
                 <ul className="space-y-2">
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white text-sm">
+                    <a href="#" className="text-gray-400 hover:text-white text-sm">
                       Terms
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white text-sm">
+                    <a href="#" className="text-gray-400 hover:text-white text-sm">
                       Privacy
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -163,5 +149,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
